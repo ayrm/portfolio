@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <!-- set the character set -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- first step to a responsive site -->
+    <title>Flexbox styling</title>
+
+    <!-- FONT AWESOME -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Your styles should be called here -->
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      	<![endif]-->
+  </head>
+
+  <body>
+    <!-- YOUR CONTENT GOES HERE -->
+    <span style="font-family">  </span>
+    <div class="container">
+      <section class="top">
+        <h1>Anacaona Rodriguez Martinez</h1>
+        <h2>Spanish Bilingual Journalism Student - Craig Newmark Graduate School of Journalism</h2>
+      </section>
+
+      <!-- <section class="photo"> -->
+
+      <figure>
+        <img class="headshot.jpg" src="images/headshot.jpg">
+        <figcaption> <span class="credit"></span></figcaption>
+      </figure>
+
+      <section class="text">
+        <p>I am a graduate student at the Newmark Graduate School of Journalism studying Spanish-Bilingual Journalism with strong journalistic integrity and a high proficiency in research. While being committed to my studies, I am an editorial intern at the New York Review of Books and a freelance researcher for a New York City-based non-profit think tank. With distinct enthusiasm for New York City news, I take pride in providing accurate and quality newsworthy stories. Advance to experience a collection of my work. </p>
+      </section>
+
+      <h3 class="flex-hed">The Collection</h3> <!-- broke the subhed out of text to correct alignment based on mock -->
+
+      <section class="flex">
+        <!-- flex box refers to the box that contains the "flexed" content -->
+
+        <section class="img_holder">
+          <!-- each img_holder is flexed content -->
+          <figure class="sub_img">
+            <img class="images/greta.jpeg" src="images/greta.jpeg"> <!-- You should crop your images to be the same size before using them, otherwise, even with flex box, they come out uneven -->
+            <figcaption class="sub_cap">The Greta Effect: Thousands March for Climate Change
+ <span class="credit">Credit: Anacaona Rodriguez Martinez</span></figcaption>
+          </figure>
+          <section class="sub_text">
+            <p>Tens of thousands of protesters gathered at Foley Square in Lower Manhattan on Friday, Sept. 20, demanding government action on the climate crisis and joining a global youth movement that drew an estimated 4 million at similar protests around the world.
+            </p>
+          </section>
+        </section>
+
+
+        <section class="img_holder">
+          <figure class="sub_img">
+            <img class="census.jpeg" src="images/census.jpeg">
+            <figcaption class="sub_cap">Closed Campuses May Lead to Census Undercounts
+ <span class="credit">Credit: Andre Beganski</span></figcaption>
+          </figure>
+          <section class="sub_text">
+            <p>The disruptions caused by the pandemic, including the exodus of many students from campuses, could have a profound impact on the census, depressing counts in areas with large numbers of college students.</p>
+          </section>
+        </section>
+
+
+        <section class="img_holder">
+          <figure class="sub_img">
+            <img class="church.jpeg" src="images/church.jpeg">
+            <figcaption class="sub_cap">The Pandemic Stymies Efforts to Help the Poorest Communities: Local Organizations that Provide Vital Social Supports Are Impeded by Social Distancing
+ <span class="credit">Credit: Rev. Stephen Pitts</span></figcaption>
+          </figure>
+          <section class="sub_text">
+            <p>At the Sacred Heart Catholic Church in El Paso’s “El Segundo” neighborhood, just blocks from the city’s main border crossing to Juarez, Mexico, the Rev. Stephen Pitts worries how parishioners are faring without the many outreach services the church has had to stop, or scale back, under the state’s coronavirus stay-at-home order. </p>
+          </section>
+        </section>
+
+      </section>
+      <!-- this ^ closes the flex box section -->
+
+    </div>
+
+    <!-- When you get to using javascript, you'll want to link to it at the bottom of the document, still inside the body. That's for later. -->
+    <!-- the jQuery library. You need this to be able to use jQuery ($) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Your javascript should be called here -->
+
+  </body>
+
+</html>
